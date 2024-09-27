@@ -1,0 +1,370 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* Start header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    position: relative;
+    z-index: 999;
+}
+
+.header i {
+    display: none;
+}
+
+.header ul {
+    display: flex;
+    font-size: 15px;
+    list-style: none;
+}
+
+.header ul li {
+    padding: 10px;
+
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: #445F41;
+
+}
+
+.header .logo span {
+    color: #445F41;
+}
+.header .logo a   {
+    list-style: none;
+    text-decoration: none;
+}
+
+.header ul li a:hover {
+    color: black;
+}
+
+#switch {
+    display: block;
+    margin-top: 11px;
+    margin-left: 10px;
+    font-size: 15px;
+    color: #445F41;
+}
+
+#switch:hover {
+    color: black;
+    cursor: pointer;
+}
+
+@media(max-width:767px) {
+    .header ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin-top: 0;
+        background-color: beige;
+        font-size: 15px;
+        color: #445F41;
+        font-weight: bold;
+    }
+
+    .header i {
+        display: block;
+        font-size: 20px;
+        color: #200E3A;
+    }
+
+    .header ul.active {
+        display: block;
+    }
+
+
+}
+
+/* End header */
+
+/* start landing */
+
+.landing {
+    background: url(../image/pexels-negative-space-34580.jpg);
+    height: calc(100vh - 70px);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.landing .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.landing h1 {
+    color: #200E3A;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.landing p {
+    width: 350px;
+    font-size: 15px;
+    color: #445F41;
+    font-weight: bolder;
+}
+
+/* end landing */
+
+/* start Services */
+
+.services-parent h1 {
+    color: #3e573b;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 35px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    text-align: center;
+    gap: 10px;
+    padding: 0 10px 10px 10px;
+}
+
+.services .card {
+    background-color: beige;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.services .card i {
+    font-size: 30px;
+    color: #445F41;
+}
+
+.services .card h2 {
+    color: #445F41;
+    letter-spacing: 1px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.services .card p {
+    color: #445F41;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+/* end  Services */
+/* start about */
+.about-parent h1 {
+    color: #3e573b;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 35px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+
+}
+
+.about img {
+    width: 100%;
+}
+
+.about .text {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about .text p {
+    text-align: justify;
+    color: #445F41;
+    font-weight: bold;
+
+}
+
+.about .text button {
+    width: 60%;
+    font-weight: bold;
+    background-color: #445F41;
+    border: none;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* end about */
+
+/* start projects */
+.projects-parent h1 {
+    color: #3e573b;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 35px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+    gap: 10px;
+}
+
+.projects div {
+    background-color: beige;
+    text-align: center;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+
+.projects img {
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.projects a {
+    display: block;
+    background-color: #445F41;
+    text-decoration: none;
+    color: white;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+
+}
+
+/* end projects */
+
+/* start contact */
+.contact-parent h1 {
+    color: #3e573b;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 35px;
+}
+
+.contact iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: 200px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.media-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.media div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.media a {
+    text-decoration: none;
+    color: blue;
+    margin-top: 10px;
+}
+
+.media .linkdin i {
+    color: blue;
+    font-size: 30px;
+
+}
+
+.media .githup i {
+    color: rgb(159, 122, 159);
+    font-size: 27px;
+}
+
+.media .email i {
+    color: #EA4335;
+    font-size: 26.3px;
+}
+
+.media a button {
+    background-color: beige;
+    color: #445F41;
+    font-weight: bold;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* end contact */
+
+/* start footer */
+.footer {
+    background-color: black;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.footer p i {
+    color: red;
+}
+
+/* end footer */
